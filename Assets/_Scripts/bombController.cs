@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TunnelConroller : MonoBehaviour {
-
+public class bombController : MonoBehaviour {
 
     // PUBLIC INSTANCE VARIABLES
     public float speed = 3f;
@@ -25,10 +24,10 @@ public class TunnelConroller : MonoBehaviour {
     void Update()
     {
         this._currentPosition = this._transform.position;
-        this._currentPosition -= new Vector2(this.speed,0);
+        this._currentPosition -= new Vector2(this.speed, 0);
         this._transform.position = this._currentPosition;
 
-        if (this._currentPosition.x <= -620)
+        if (this._currentPosition.x <= -300)
         {
             this.Reset();
         }
@@ -36,6 +35,6 @@ public class TunnelConroller : MonoBehaviour {
 
     public void Reset()
     {
-        this._transform.position = new Vector2(600f,0);
+        this._transform.position = new Vector2(270f, 0);
     }
 }
