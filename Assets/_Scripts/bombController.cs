@@ -33,8 +33,11 @@ public class bombController : MonoBehaviour {
         }
     }
 
+   
+
     public void Reset()
     {
-        this._transform.position = new Vector2(270f, 0);
+        float yPosition = Random.Range(-200f, 200f);
+        this._transform.position = new Vector2(270f, yPosition);
     }
 }
