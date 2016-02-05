@@ -46,14 +46,14 @@ public class PlayerController : MonoBehaviour {
     private void _checkBounds()
     {
         // check if the plane is going out of bounds and keep it inside window boundary
-        if (this._currentPosition.y < -132)
+        if (this._currentPosition.y < -185)
         {
-            this._currentPosition.y = -132;
+            this._currentPosition.y = -185;
         }
 
-        if (this._currentPosition.y > 209)
+        if (this._currentPosition.y > 185)
         {
-            this._currentPosition.y = 209;
+            this._currentPosition.y = 185;
         }
     }
 }

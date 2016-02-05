@@ -50,8 +50,8 @@
      <Compile Include="Assets\_Scripts\PlayerController.cs" />
      <Compile Include="Assets\_Scripts\RewardController.cs" />
      <Compile Include="Assets\_Scripts\TunnelConroller.cs" />
-     <Compile Include="Assets\_Scripts\bombController.cs" />
-     <Compile Include="Assets\_Scripts\jawsController.cs" />
+     <Compile Include="Assets\_Scripts\blueGhostsController.cs" />
+     <Compile Include="Assets\_Scripts\enemyController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
