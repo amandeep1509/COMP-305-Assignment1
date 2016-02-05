@@ -1,7 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+/*
+File Name:  blueGhostController.cs
+Author: Amandeep Singh
+Last Modified By:  Amandeep Singh
+Date Last Modified:  Feb 02, 2016
+Program Description: Pacman game
+Revision History: Revised 5 times
+*/
+
 public class blueGhostsController : MonoBehaviour {
+
     // PUBLIC INSTANCE VARIABLES
     public float minVerticalSpeed = -2f;
     public float maxVerticalSpeed = 2f;
@@ -31,12 +42,14 @@ public class blueGhostsController : MonoBehaviour {
         this._currentPosition -= new Vector2(this._horizontalSpeed, this._verticalDrift);
         this._transform.position = this._currentPosition;
 
+        //Reset the position of blue ghost
         if (this._currentPosition.x <= -300)
         {
             this.Reset();
         }
     }
 
+    //Method to reset the blue ghost
     public void Reset()
     {
         this._horizontalSpeed = Random.Range(this.minHorizontalSpeed, this.maxHorizontalSpeed);

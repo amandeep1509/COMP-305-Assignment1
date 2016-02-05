@@ -1,8 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TunnelConroller : MonoBehaviour {
 
+/*
+File Name:  BackGroundController.cs
+Author: Amandeep Singh
+Last Modified By:  Amandeep Singh
+Date Last Modified:  Feb 02, 2016
+Program Description: Pacman game
+Revision History: Revised 5 times
+*/
+
+public class BackGroundController1 : MonoBehaviour {
 
     // PUBLIC INSTANCE VARIABLES
     public float speed = 3f;
@@ -25,17 +34,19 @@ public class TunnelConroller : MonoBehaviour {
     void Update()
     {
         this._currentPosition = this._transform.position;
-        this._currentPosition -= new Vector2(this.speed,0);
+        this._currentPosition -= new Vector2(this.speed, 0);
         this._transform.position = this._currentPosition;
 
+        //reset the image when out of focus
         if (this._currentPosition.x <= -620)
         {
             this.Reset();
         }
     }
 
+    //Method to reset the image
     public void Reset()
     {
-        this._transform.position = new Vector2(600f,0);
+        this._transform.position = new Vector2(600f, 0);
     }
 }

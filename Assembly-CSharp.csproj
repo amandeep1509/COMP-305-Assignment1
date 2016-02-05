@@ -45,11 +45,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\_Scripts\BackGroundController1.cs" />
      <Compile Include="Assets\_Scripts\GameController.cs" />
      <Compile Include="Assets\_Scripts\PlayerCollider.cs" />
      <Compile Include="Assets\_Scripts\PlayerController.cs" />
      <Compile Include="Assets\_Scripts\RewardController.cs" />
-     <Compile Include="Assets\_Scripts\TunnelConroller.cs" />
      <Compile Include="Assets\_Scripts\blueGhostsController.cs" />
      <Compile Include="Assets\_Scripts\enemyController.cs" />
  <Reference Include="UnityEngine.UI">

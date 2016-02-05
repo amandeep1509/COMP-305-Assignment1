@@ -1,6 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+/*
+File Name:  enemyController.cs
+Author: Amandeep Singh
+Last Modified By:  Amandeep Singh
+Date Last Modified:  Feb 02, 2016
+Program Description: Pacman game
+Revision History: Revised 5 times
+*/
+
 public class enemyController : MonoBehaviour {
 
     // PUBLIC INSTANCE VARIABLES
@@ -38,6 +48,7 @@ public class enemyController : MonoBehaviour {
         }
     }
 
+    //Method to reset the red ghost
     public void Reset()
     {
         this._horizontalSpeed = Random.Range(this.minHorizontalSpeed, this.maxHorizontalSpeed);

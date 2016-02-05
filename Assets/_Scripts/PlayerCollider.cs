@@ -1,6 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+/*
+File Name:  PlayerCollider.cs
+Author: Amandeep Singh
+Last Modified By:  Amandeep Singh
+Date Last Modified:  Feb 02, 2016
+Program Description: Pacman game
+Revision History: Revised 5 times
+*/
+
 public class PlayerCollider : MonoBehaviour {
 
     // PRIVATE INSTANCE VARIABLES 
@@ -23,20 +33,22 @@ public class PlayerCollider : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    //Method to detect collisions
     public void OnTriggerEnter2D(Collider2D other)
     {
-
+        //Collision with enemy
         if (other.gameObject.CompareTag("Jaws"))
         {
-            // Debug.Log("island collision");
             this._enemySound.Play();
             this.gameController.LivesValue -= 1;
            
         }
 
+        //Collision with reward object
         if (other.gameObject.CompareTag("Reward"))
         {
-            // Debug.Log("cloud collision");
+   
             this._rewardSound.Play();
             this.gameController.ScoreValue += 100;
 

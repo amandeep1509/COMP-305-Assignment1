@@ -1,6 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+File Name:  RewardController.cs
+Author: Amandeep Singh
+Last Modified By:  Amandeep Singh
+Date Last Modified:  Feb 02, 2016
+Program Description: Pacman game
+Revision History: Revised 5 times
+*/
 public class RewardController : MonoBehaviour {
 
     // PUBLIC INSTANCE VARIABLES

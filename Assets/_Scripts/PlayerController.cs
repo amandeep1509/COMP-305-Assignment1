@@ -1,6 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+/*
+File Name: PlayerCOntroller.cs
+Author: Amandeep Singh
+Last Modified By:  Amandeep Singh
+Date Last Modified:  Feb 02, 2016
+Program Description: Pacman game
+Revision History: Revised 5 times
+*/
+
 public class PlayerController : MonoBehaviour {
 
 
@@ -24,13 +34,14 @@ public class PlayerController : MonoBehaviour {
         this._currentPosition = this._transform.position;
 
         this._playerInput = Input.GetAxis("Vertical");
-        // if player input is positive move right 
+
+        // if player input is positive move upwards
         if (this._playerInput > 0)
         {
             this._currentPosition += new Vector2(0,this.speed);
         }
 
-        // if player input is negative move left 
+        // if player input is negative move downwards 
         if (this._playerInput < 0)
         {
             this._currentPosition -= new Vector2(0, this.speed);
@@ -43,6 +54,7 @@ public class PlayerController : MonoBehaviour {
 
 
     // PRIVATE METHODS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    //Method to constraint the player in boundary
     private void _checkBounds()
     {
         // check if the plane is going out of bounds and keep it inside window boundary
